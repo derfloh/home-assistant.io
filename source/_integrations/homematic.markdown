@@ -426,7 +426,7 @@ When the connection to your Homematic CCU or Homegear is lost, Home Assistant wi
         entity_id: binary_sensor.homematic_up
         to: "off"
       action:
-        # Reconnect, if sensor has not been updated for over 3 hours
+        # Reconnect, if sensor has not been updated for over 10 minutes
         service: homematic.reconnect
   ```
 {% endraw %}
